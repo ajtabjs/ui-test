@@ -3,17 +3,36 @@
     src: url(fonts/main.ttf);
     
 } 
- .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 5px;
+@font-face {
+    font-family:OnestBold;
+    src: url(fonts/bold.ttf);
+    
+} 
+ header {
+    padding-bottom: 10px;
  }
 
+ .gradient-background {
+    background: linear-gradient(300deg,#000000,#292929,#4c4c4c,#6b6b6b,#979797,#6b6b6b,#4c4c4c,#000000);
+    background-size: 480% 480%;
+    animation: gradient-animation 80s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 body {
     background-image: url("img/bg.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: absolute;
     font-family:Onest;
     color: white; 
     text-align: center;
@@ -22,4 +41,21 @@ body {
 img {
     height:200px;
     width: 200px;
+}
+
+a {
+    padding: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.dot {
+    font-size: 24px;
+    display: inline;
+}
+
+.visit {
+    font-family:OnestBold;
+    display: inline;
 }
