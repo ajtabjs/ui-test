@@ -1,5 +1,9 @@
-* {
-    font-family: myFirstFont;
+@font-face {
+    font-family:Onest;
     src: url(fonts/main.ttf);
-  }
+} 
+
+body {
+    font-family:Onest;
+}
   
