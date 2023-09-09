@@ -1,9 +1,25 @@
 @font-face {
     font-family:Onest;
     src: url(fonts/main.ttf);
+    
 } 
+ .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 5px;
+ }
 
 body {
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     font-family:Onest;
+    color: white; 
+    text-align: center;
 }
   
+img {
+    height:200px;
+    width: 200px;
+}
