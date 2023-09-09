@@ -70,11 +70,13 @@ div.polaroid {
   border-radius: 45px;
   font-family: 'Onest', sans-serif;
   display: inline-block;
+  transition: 0.5s;
 }
 
 
 div.polaroid:hover{
     transform:scale(1.3);
+    z-index: 2;
 }
 
 .game {  
